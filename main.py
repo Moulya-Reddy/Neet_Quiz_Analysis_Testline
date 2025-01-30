@@ -1,32 +1,32 @@
 import json
-from data_analysis import analyze_performance
-from insights_generation import generate_insights, generate_recommendations, generate_student_persona
-from visualisation import plot_topic_accuracy, plot_performance_over_time
+from data_analysis import analysing_performance
+from insights_generation import generating_insights, generating_recommendations, generating_student_persona
+from visualisation import plotting_topic_accuracy, plotting_performance_over_time
 
 def main():
     # Load data (current and historical)
     with open('/Users/ananthpalreddykandhala/Documents/neet_quiz_data/data/current_data.json') as f:
-        current_data = json.load(f)
+        current_data_of_student = json.load(f)
     
     with open('/Users/ananthpalreddykandhala/Documents/neet_quiz_data/data/historical_data.json') as f:
-        historical_data = json.load(f)
+        historical_data_of_student = json.load(f)
     
     # Analyze current and historical data
-    current_analysis, historical_analysis = analyze_performance(current_data, historical_data)
+    current_analysis_of_student, historical_analysis_of_student = analysing_performance(current_data_of_student, historical_data_of_student)
     
     # Generate insights and recommendations
-    insights = generate_insights(current_analysis, historical_analysis)
-    recommendations = generate_recommendations(current_analysis, historical_analysis)
-    student_persona = generate_student_persona(current_analysis, historical_analysis)
+    insights_generated = generating_insights(current_analysis_of_student, historical_analysis_of_student)
+    recommendations_generated = generate_recommendations(current_analysis_of_student, historical_analysis_of_student)
+    student_persona_generated = generate_student_persona(current_analysis_of_student, historical_analysis_of_student)
     
     # Visualizations
-    plot_topic_accuracy(current_analysis, historical_analysis)
-    plot_performance_over_time(historical_analysis)
+    plotting_topic_accuracy(current_analysis_of_student, historical_analysis_of_student)
+    plotting_performance_over_time(historical_analysis_of_student)
     
     # Output insights and recommendations
-    print("Insights:", insights)
-    print("Recommendations:", recommendations)
-    print("Student Persona:", student_persona)
+    print("Insights:", insights_generated)
+    print("Recommendations:", recommendations_generated)
+    print("Student Persona:", student_persona_generated)
 
 if __name__ == "__main__":
     main()
