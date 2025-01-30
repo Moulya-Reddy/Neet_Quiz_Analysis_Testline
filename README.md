@@ -48,12 +48,15 @@ Functions:
 Purpose: Generates insights based on the analyzed data.
 Functions:
   - `generating_insights()`: Identifies weak topics, improvement trends, and performance gaps.
+  - `()`:
+  - `()`:
 
 3. `visualisation.py`
 Purpose: Creates visual representations of the student’s performance.
 Functions:
-  - `ploting_topic_accuracy()`: Generates a bar chart showing the student’s accuracy in different topics.
-  - `ploting_performance_over_time()`: Generates a line graph showing the student’s performance trends over time.
+  - `plotting_topic_accuracy()`: Generates a bar chart showing the student’s accuracy in different topics.
+  - `plotting_performance_over_time()`: Generates a line graph showing the student’s performance trends over time.
+  - `plotting_accuracy_distribution()`: Generates a graph to show the accuracy of the student's performace.
 
 4. `main.py`
 Purpose: The main script that runs the analysis and displays the results.
