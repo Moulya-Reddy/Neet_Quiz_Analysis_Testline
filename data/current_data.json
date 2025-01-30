@@ -1,0 +1,44 @@
+{
+    "quiz": {
+        "id": 5,
+        "title": "Human Physiology PYQ",
+        "topic": "Breathing and exchange of gases",
+        "quiz_type": "PYQ",
+        "time_created": "2024-04-25T21:36:38.071+05:30",
+        "time_updated": "2024-06-05T17:17:16.719+05:30",
+        "duration": 15,
+        "end_time": "2024-04-26T00:00:00.000+05:30",
+        "negative_marks": "1.0",
+        "correct_answer_marks": "4.0",
+        "shuffle_questions": true,
+        "show_answers": true,
+        "max_mistake_count": 9,
+        "published": true,
+        "is_form": false,
+        "is_custom": false,
+        "show_unanswered": false,
+        "end_date": "2025-01-30",
+        "live_count": "Free Test",
+        "coin_count": -1,
+        "questions_count": 10,
+        "daily_date": "January 29, 2025",
+        "reading_materials": []
+    },
+    "questions": [
+        {
+            "id": 35,
+            "description": "Which of the following options are related to emphysema?",
+            "topic": "Breathing and exchange of gases",
+            "correct_option": "Inflammation of bronchioles; Decreased respiratory surface",
+            "options": [
+                {"id": 139, "description": "Increased respiratory surface; Inflammation of bronchioles", "is_correct": false},
+                {"id": 140, "description": "Decreased respiratory surface; Inflammation of bronchioles", "is_correct": false},
+                {"id": 141, "description": "Increased number of bronchioles; Increased respiratory surface", "is_correct": false},
+                {"id": 142, "description": "Inflammation of bronchioles; Decreased respiratory surface", "is_correct": true}
+            ]
+        }
+    ],
+    "response_map": {
+        "35": "142"
+    }
+}

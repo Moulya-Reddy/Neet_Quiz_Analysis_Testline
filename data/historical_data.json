@@ -1,0 +1,38 @@
+{
+    "1": {
+        "questions": [
+            {"id": 1, "topic": "Biology", "correct_option": "A"},
+            {"id": 2, "topic": "Chemistry", "correct_option": "B"}
+        ],
+        "response_map": {"1": "B", "2": "A"}
+    },
+    "2": {
+        "questions": [
+            {"id": 3, "topic": "Physics", "correct_option": "C"},
+            {"id": 4, "topic": "Math", "correct_option": "A"}
+        ],
+        "response_map": {"3": "C", "4": "B"}
+    },
+    "3": {
+        "questions": [
+            {"id": 5, "topic": "Biology", "correct_option": "D"},
+            {"id": 6, "topic": "Chemistry", "correct_option": "B"}
+        ],
+        "response_map": {"5": "D", "6": "B"}
+    },
+    "4": {
+        "questions": [
+            {"id": 7, "topic": "Physics", "correct_option": "B"},
+            {"id": 8, "topic": "Math", "correct_option": "C"}
+        ],
+        "response_map": {"7": "B", "8": "C"}
+    },
+    "5": {
+        "questions": [
+            {"id": 9, "topic": "Biology", "correct_option": "C"},
+            {"id": 10, "topic": "Chemistry", "correct_option": "A"}
+        ],
+        "response_map": {"9": "A", "10": "C"}
+    }
+}
+
