@@ -3,7 +3,7 @@ from collections import defaultdict
 
 
 def analysing_performance(current_data_of_student, historical_data_of_student):
-    # Initialize current analysis results
+    # Initialising the current dataset results(analysing)
     current_analysis = {
         'total_questions': len(current_data_of_student['questions']),
         'correct_answers': sum(
@@ -13,12 +13,12 @@ def analysing_performance(current_data_of_student, historical_data_of_student):
         'difficulty_levels': defaultdict(int)
     }
     
-    # Populate topic and difficulty level analysis
+    # Populating the topic and their difficulty level analysis
     for q in current_data_of_student['questions']:
         current_analysis['topics'][q['topic']] += 1
-        current_analysis['difficulty_levels']['unknown'] += 1  # Assuming unknown for simplicity
+        current_analysis['difficulty_levels']['unknown'] += 1  # Assuming it as unknown for simplicity
     
-    # Initialize historical analysis results
+    # Initialising historical dataset results(analysis)
     historical_analysis = {}
     for quiz_id, quiz_data in historical_data_of_student.items():
         historical_analysis[quiz_id] = {
