@@ -1,7 +1,7 @@
 import json
 from data_analysis import analysing_performance
 from insights_generation import generating_insights, generating_recommendations, generating_student_persona
-from visualisation import plotting_topic_accuracy, plotting_performance_over_time
+from visualisation import plotting_topic_accuracy, plotting_performance_over_time,plotting_accuracy_distribution
 
 def main():
     # Loading the datasets (current and historical)
@@ -23,6 +23,7 @@ def main():
     # Visualisation of the performance of student 
     plotting_topic_accuracy(current_analysis_of_student, historical_analysis_of_student)
     plotting_performance_over_time(historical_analysis_of_student)
+    plotting_accuracy_distribution(current_analysis_of_student, historical_analysis_of_student)
     
     # Printing the output of insights and recommendations
     print("Insights:", insights_generated)
