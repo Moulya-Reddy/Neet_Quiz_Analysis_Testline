@@ -40,7 +40,7 @@ The script will display the following:
 **File Descriptions**
 
 1. `data_analysis.py`
-Purpose: Loads and processes the quiz data.
+Purpose: Processes the quiz data.
 Functions:
   - `analysing_performance()`: Calculates accuracy, topic-wise performance, and difficulty-level performance.
 
@@ -48,8 +48,8 @@ Functions:
 Purpose: Generates insights based on the analyzed data.
 Functions:
   - `generating_insights()`: Identifies weak topics, improvement trends, and performance gaps.
-  - `()`:
-  - `()`:
+  - `generating_recommendations()`: Gives recommendation to the student where to improve.
+  - `generating_student_persona()`: Highlights the student's strengths and weaknesses.
 
 3. `visualisation.py`
 Purpose: Creates visual representations of the student’s performance.
