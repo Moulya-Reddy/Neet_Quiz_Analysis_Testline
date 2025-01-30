@@ -42,19 +42,18 @@ The script will display the following:
 1. `data_analysis.py`
 Purpose: Loads and processes the quiz data.
 Functions:
-  - `load_data()`: Reads the quiz data from `current_data.json` and `historical_data.json`.
-  - `analyze_performance()`: Calculates accuracy, topic-wise performance, and difficulty-level performance.
+  - `analysing_performance()`: Calculates accuracy, topic-wise performance, and difficulty-level performance.
 
 2. `insights_generation.py`
 Purpose: Generates insights based on the analyzed data.
 Functions:
-  - `generate_insights()`: Identifies weak topics, improvement trends, and performance gaps.
+  - `generating_insights()`: Identifies weak topics, improvement trends, and performance gaps.
 
 3. `visualisation.py`
 Purpose: Creates visual representations of the student’s performance.
 Functions:
-  - `plot_topic_accuracy()`: Generates a bar chart showing the student’s accuracy in different topics.
-  - `plot_performance_over_time()`: Generates a line graph showing the student’s performance trends over time.
+  - `ploting_topic_accuracy()`: Generates a bar chart showing the student’s accuracy in different topics.
+  - `ploting_performance_over_time()`: Generates a line graph showing the student’s performance trends over time.
 
 4. `main.py`
 Purpose: The main script that runs the analysis and displays the results.
