@@ -1,18 +1,18 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Set the style for the plots (Seaborn's default white grid)
+# Setting the style for the plots (Seaborn's default is white grid)
 sns.set(style="whitegrid")
 
-def plot_topic_accuracy(current_analysis, historical_analysis):
+def plotting_topic_accuracy(current_analysis_of_student, historical_analysis_of_student):
     """
     Plot topic-wise accuracy of the current quiz submission.
     :param current_analysis: Current quiz analysis data (accuracies by topic)
     :param historical_analysis: Historical quiz analysis data (for future comparison if needed)
     """
     # Extract topics and accuracy data
-    topics = list(current_analysis['topics'].keys())
-    accuracies = [current_analysis['topics'][topic] / current_analysis['total_questions'] * 100 for topic in topics]
+    topics = list(current_analysis_of_student['topics'].keys())
+    accuracies = [current_analysis_of_student['topics'][topic] / current_analysis_of_student['total_questions'] * 100 for topic in topics]
     
     # Create a bar plot for topic-wise accuracy
     plt.figure(figsize=(12, 6))
@@ -30,15 +30,15 @@ def plot_topic_accuracy(current_analysis, historical_analysis):
     plt.tight_layout()  # Ensure no labels get cut off
     plt.show()
 
-def plot_performance_over_time(historical_analysis):
+def plotting_performance_over_time(historical_analysis_of_student):
     """
     Plot performance over time (accuracy per quiz).
     :param historical_analysis: Historical quiz performance data
     """
     # Extract quizzes and accuracy data over time
-    quizzes = list(historical_analysis.keys())
+    quizzes = list(historical_analysis_of_student.keys())
     accuracies = [
-        historical_analysis[q]['correct_answers'] / historical_analysis[q]['total_questions'] * 100
+        historical_analysis_of_student[q]['correct_answers'] / historical_analysis_of_student[q]['total_questions'] * 100
         for q in quizzes
     ]
     
@@ -62,19 +62,19 @@ def plot_performance_over_time(historical_analysis):
     plt.tight_layout()
     plt.show()
 
-def plot_accuracy_distribution(current_analysis, historical_analysis):
+def plotting_accuracy_distribution(current_analysis_of_student, historical_analysis_of_student):
     """
     Plot the distribution of accuracies for current and historical quizzes.
     :param current_analysis: Current quiz analysis data
     :param historical_analysis: Historical quiz analysis data
     """
     # Calculate current quiz accuracy
-    current_accuracy = current_analysis['correct_answers'] / current_analysis['total_questions'] * 100
+    current_accuracy = current_analysis_of_student['correct_answers'] / current_analysis_of_student['total_questions'] * 100
     
     # Extract historical accuracies
     historical_accuracies = [
-        historical_analysis[q]['correct_answers'] / historical_analysis[q]['total_questions'] * 100
-        for q in historical_analysis
+        historical_analysis_of_student[q]['correct_answers'] / historical_analysis_of_student[q]['total_questions'] * 100
+        for q in historical_analysis_of_student
     ]
     
     # If there's no historical data, show a message and exit
