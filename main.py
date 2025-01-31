@@ -17,8 +17,8 @@ def main():
     
     # Generating the  insights and recommendations of the student 
     insights_generated = generating_insights(current_analysis_of_student, historical_analysis_of_student)
-    recommendations_generated = generate_recommendations(current_analysis_of_student, historical_analysis_of_student)
-    student_persona_generated = generate_student_persona(current_analysis_of_student, historical_analysis_of_student)
+    recommendations_generated = generating_recommendations(current_analysis_of_student, historical_analysis_of_student)
+    student_persona_generated = generating_student_persona(current_analysis_of_student, historical_analysis_of_student)
     
     # Visualisation of the performance of student 
     plotting_topic_accuracy(current_analysis_of_student, historical_analysis_of_student)
