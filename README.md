@@ -63,13 +63,3 @@ Purpose: The main script that runs the analysis and displays the results.
 Functions:
   - Calls functions from `data_analysis.py`, `insights_generation.py`, and `visualisation.py` to analyze the data, generate insights, and create visualizations.
 
-**Requirements**
-
-- Python 3.x
-- Libraries:
-  - `json`
-  - `collections`
-  - `matplotlib`
-  - `seaborn`
-
-Install the required libraries using:
