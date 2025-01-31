@@ -24,7 +24,7 @@ Step 1: Extract Quiz Data
 
 Step 2: Run the Scripts
 1. Clone or download this repository to your local machine.
-2. Install the required Python libraries by running:
+2. Install the required Python libraries.
 3. Run the `main.py` script:
    (python3 main.py)
 
